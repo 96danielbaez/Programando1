@@ -294,5 +294,36 @@ pA_masBajo = auxpA_Ordenado[0];
 pA_masAlto = auxpA_Ordenado[auxpA_Ordenado.length - 1];
 
 console.log(auxpA_Ordenado);
-console.log("El PowerAttack más bajo es: " + pA_masBajo[0] + ", y pertenece a ");
+console.log(
+  "El PowerAttack más bajo es: " + pA_masBajo[0] + ", y pertenece a ",
+);
 console.log(pA_masAlto);
+
+/**
+ *
+ *
+ *  Tomar numeros pares de la matriz.
+ *
+ *
+ */
+
+let matriz1 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+let aux_vec = [];
+
+// RECORRO LA MATRIZ
+
+for (let i = 0; i < matriz1.length; i++) {
+  for (let j = 0; j < matriz1.length; j++) {
+    console.log(matriz1[i][j]);
+    if (matriz1[i][j] % 2 === 0) {
+      aux_vec[aux_vec.length] = matriz1[i][j];
+    }
+  }
+}
+
+console.log(aux_vec);
