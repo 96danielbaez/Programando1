@@ -327,3 +327,54 @@ for (let i = 0; i < matriz1.length; i++) {
 }
 
 console.log(aux_vec);
+
+/**
+ *
+ *
+ *  Sumar todos los elementos de la matriz
+ *
+ *
+ */
+
+let matriz2 = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+let ac_matriz = 0;
+
+for (let i = 0; i < matriz2.length; i++) {
+  for (let j = 0; j < matriz2.length; j++) {
+    console.log(matriz2[i][j]);
+    ac_matriz = ac_matriz + matriz2[i][j];
+    console.log(ac_matriz);
+  }
+}
+console.log(ac_matriz);
+
+/**
+ *
+ *
+ *  Sumar cada fila (cada vector)
+ *
+ *
+ */
+
+let matriz3 = [
+  [1, 2, 3], // 0
+  [4, 5, 6], // 1
+  [7, 8, 9], // 2
+];
+let filas_sumadas = [];
+
+
+console.log(matriz3.length);
+
+for (let i = 0; i < matriz3.length; i++) {
+  for (let j = 0; j < matriz3[i].length; j++) {
+    console.log(matriz3[i][j]);
+  }
+}
+
+console.log(filas_sumadas);
