@@ -415,3 +415,22 @@ for (let i = 0; i < matriz4.length; i++) {
 
 console.log(numMasAlto);
 console.log(posNumMasAlto);
+
+/**
+ *
+ * PRACTICAR FUNCIONES
+ *
+ */
+
+
+/**Función, tipado común */
+function saludar(x) {
+  return console.log("Hola " + x);
+}
+
+saludar("Alejandro");
+
+/**Función, tipado flecha */
+const saludar2 = (x) => {console.log("Hola " + x)};
+
+saludar2("Alejandro");
