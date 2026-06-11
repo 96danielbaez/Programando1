@@ -366,15 +366,52 @@ let matriz3 = [
   [4, 5, 6], // 1
   [7, 8, 9], // 2
 ];
+
 let filas_sumadas = [];
 
-
-console.log(matriz3.length);
-
 for (let i = 0; i < matriz3.length; i++) {
-  for (let j = 0; j < matriz3[i].length; j++) {
-    console.log(matriz3[i][j]);
+  // RECORRO LA MATRIZ
+  let aux_am = 0; // DECLARO EL AUX ACUMULADOR EN 0
+  for (let j = 0; j < matriz3.length; j++) {
+    // RECORRO LOS VECTORES INTERNOS
+    if (j === 0 || j === 1) {
+      // CONDICIONO LAS PRIMERAS DOS POSICIONES DEL VECTOR
+      aux_am = aux_am + matriz3[i][j]; // LAS ACUMULO
+    }
   }
+  filas_sumadas[filas_sumadas.length] = aux_am; // CARGO AL VECTOR DE FILAS SUMADAS
 }
 
 console.log(filas_sumadas);
+
+/**
+ *
+ *
+ *  ENCONTRAR EL NUMERO MÁS ALTO DE LA MATRIZ
+ *  Extra: devolver el número y su posición.
+ *
+ *
+ */
+
+let matriz4 = [
+  [100, 22, 59],
+  [4, 650, 81],
+  [13, 8, 34],
+];
+
+let numMasAlto = 0;
+let aux_contador = 0;
+let posNumMasAlto = 0;
+
+for (let i = 0; i < matriz4.length; i++) {
+  for (let j = 0; j < matriz4.length; j++) {
+    aux_contador++;
+    if (numMasAlto < matriz4[i][j]) {
+      numMasAlto = matriz4[i][j];
+      posNumMasAlto = aux_contador;
+    }
+  }
+}
+
+console.log(numMasAlto);
+console.log(posNumMasAlto);
